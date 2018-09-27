@@ -11,6 +11,7 @@
 .input-form {
   display: flex;
   flex-direction: column;
+  height: 114px;
   justify-content: space-around;
   margin: auto;
   width: 40%;
