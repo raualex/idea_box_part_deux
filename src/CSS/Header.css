@@ -1,0 +1,22 @@
+.box-title {
+  color: #dddddc;
+}
+
+.header{
+  background-color: #848482;
+  height: 40vh;
+  width: 100%;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  height: 114px;
+  justify-content: space-around;
+  margin: auto;
+  width: 40%;
+}
+
+.title-bar {
+  margin: 0;
+}
