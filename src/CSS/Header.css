@@ -3,20 +3,35 @@
 }
 
 .header{
+  align-items: center;
   background-color: #848482;
-  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
   width: 100%;
+}
+
+.input-body,
+.input-title {
+  height: 24px;
+}
+
+.input-button {
+  font-size: 1em;
+  height: 31px;
 }
 
 .input-form {
   display: flex;
   flex-direction: column;
-  height: 114px;
+  height: 170px;
   justify-content: space-around;
-  margin: auto;
   width: 40%;
 }
 
 .title-bar {
+  font-size: 3em;
   margin: 0;
+  padding-top: 56px;
 }
