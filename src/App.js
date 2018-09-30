@@ -7,13 +7,10 @@ class App extends Component {
   constructor() {
     super();
 
-    this.state = {
-      ideasforStorage: []
-    }
+    this.storeIdeas = this.storeIdeas.bind(this)
   }
 
   storeIdeas(idea) {
-    console.log(idea)
     let stringifiedIdea = JSON.stringify(idea)
     localStorage.setItem(Date.now(), stringifiedIdea)
   }

@@ -7,6 +7,8 @@ class Card extends Component {
   }
 
   render() {
+console.log(this.props.cardData)
+
     return(
       <div className="card">
        <h3 className="card-title">Input title goes here</h3>
