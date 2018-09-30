@@ -1,5 +1,5 @@
 .box-title {
-  color: #dddddc;
+  color: #eaeae9;
 }
 
 .header{
@@ -15,23 +15,25 @@
 .input-body,
 .input-title {
   height: 24px;
+  padding: 0.5em;
 }
 
 .input-button {
   font-size: 1em;
-  height: 31px;
+  height: 36px;
+  padding: 0.5em;
 }
 
 .input-form {
   display: flex;
   flex-direction: column;
-  height: 170px;
+  height: 190px;
   justify-content: space-around;
   width: 40%;
 }
 
 .title-bar {
-  font-size: 3em;
+  font-size: 4em;
   margin: 0;
   padding-top: 56px;
 }

@@ -5,6 +5,7 @@
   flex-direction: column;
   height: 20%;
   justify-content: space-around;
+  padding: 12px;
   width: 40%;
 }
 
