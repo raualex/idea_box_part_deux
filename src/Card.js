@@ -8,8 +8,9 @@ class Card extends Component {
 
   render() {
     return(
-      <div>
-       <p>Input goes here</p>
+      <div className="card">
+       <h3 className="card-title">Input title goes here</h3>
+       <p className="card-body">Input body goes here</p>
       </div>
     )
   }

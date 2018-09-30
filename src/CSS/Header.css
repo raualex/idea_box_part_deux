@@ -1,22 +1,39 @@
 .box-title {
-  color: #dddddc;
+  color: #eaeae9;
 }
 
 .header{
+  align-items: center;
   background-color: #848482;
-  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
   width: 100%;
+}
+
+.input-body,
+.input-title {
+  height: 24px;
+  padding: 0.5em;
+}
+
+.input-button {
+  font-size: 1em;
+  height: 36px;
+  padding: 0.5em;
 }
 
 .input-form {
   display: flex;
   flex-direction: column;
-  height: 114px;
+  height: 190px;
   justify-content: space-around;
-  margin: auto;
   width: 40%;
 }
 
 .title-bar {
+  font-size: 4em;
   margin: 0;
+  padding-top: 56px;
 }
