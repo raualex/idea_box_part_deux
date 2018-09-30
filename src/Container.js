@@ -22,6 +22,7 @@ class Container extends Component {
   }
 
   render() {
+
     if (localStorage.length) { 
       this.retrieveIdeas()
       return(

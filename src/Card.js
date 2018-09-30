@@ -4,17 +4,27 @@ import './CSS/Card.css'
 class Card extends Component {
   constructor() {
     super();
+
+    this.state = {
+      cardArray: []
+    }
+  }
+
+  componentWillMount() {
+    this.setState({
+      cardArray: this.props.cardData
+    })
   }
 
   render() {
-console.log(this.props.cardData)
-
-    return(
-      <div className="card">
-       <h3 className="card-title">Input title goes here</h3>
-       <p className="card-body">Input body goes here</p>
-      </div>
-    )
+    return this.state.cardArray.map((idea, index) => {
+      return(
+        <div className="card" key={index}>
+          <h3 className="card-title">{idea.title}</h3>
+          <p className="card-body">{idea.body}</p>
+        </div>
+      )
+    })
   }
 }
 
