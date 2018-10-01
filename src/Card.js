@@ -7,12 +7,14 @@ class Card extends Component {
   }
 
   render() {
-    return(
-      <div className="card">
-       <h3 className="card-title">Input title goes here</h3>
-       <p className="card-body">Input body goes here</p>
-      </div>
-    )
+    return this.props.cardData.map((idea, index) => {
+      return(
+        <div className="card" key={index}>
+          <h3 className="card-title">{idea.title}</h3>
+          <p className="card-body">{idea.body}</p>
+        </div>
+      )
+    })
   }
 }
 

@@ -8,23 +8,29 @@ class App extends Component {
     super();
 
     this.state = {
-      ideasforStorage: []
+      idea: {},
+      ideaArray: []
     }
+
+    this.storeIdeas = this.storeIdeas.bind(this)
   }
 
   storeIdeas(idea) {
-    console.log(idea)
     let stringifiedIdea = JSON.stringify(idea)
     localStorage.setItem(Date.now(), stringifiedIdea)
+    this.setState({
+      idea: idea
+    })
   }
 
   render() {
+
     return (
       <div className="App">
         <Header storeIdeas={this.storeIdeas} />
-        <Container />
+        <Container ideaArray={this.state.ideaArray} />
       </div>
-    );
+    )
   }
 }
 

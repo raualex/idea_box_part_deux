@@ -33,14 +33,23 @@ class Header extends Component {
     event.preventDefault()
     let title = this.state.title
     let body = this.state.body
-    let ideaObj = { title: title, body: body }
-    this.props.storeIdeas(ideaObj)
-    this.clearInputs()
+
+    if (title !== '' && body !== '') {
+      let ideaObj = { title: title, body: body }
+      this.props.storeIdeas(ideaObj)
+      this.clearInputs()
+    } else {
+      return
+    }
   }
 
   clearInputs() {
     document.querySelector('.input-title').value = ''
-    document.querySelector('.input-body').value = ''    
+    document.querySelector('.input-body').value = ''
+    this.setState({
+      title: '',
+      body: ''
+    })   
   }
 
   render() {
