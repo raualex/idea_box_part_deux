@@ -13,13 +13,6 @@ class App extends Component {
     }
 
     this.storeIdeas = this.storeIdeas.bind(this)
-    this.sendStateToContainer = this.sendStateToContainer.bind(this)
-  }
-
-  sendStateToContainer() {
-    this.setState({
-      counter: Date.now()
-    })
   }
 
   storeIdeas(idea) {
@@ -34,7 +27,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header storeIdeas={this.storeIdeas} sendStateToContainer={this.sendStateToContainer} />
+        <Header storeIdeas={this.storeIdeas} />
         <Container ideaArray={this.state.ideaArray} />
       </div>
     )

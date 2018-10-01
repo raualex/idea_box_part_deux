@@ -11,13 +11,25 @@ class Container extends Component {
     }
 
     this.retrieveIdeas = this.retrieveIdeas.bind(this)
+    this.clearList = this.clearList.bind(this)
   }
 
   retrieveIdeas() {
+    this.clearList()
     for (var i = 0; i < localStorage.length; i++) {
       let retrievedIdea = localStorage.getItem(localStorage.key(i));
       let parsedIdea = JSON.parse(retrievedIdea);
       this.state.ideaList.push(parsedIdea)
+    }
+  }
+
+  clearList() {
+    if (this.state.ideaList.length) {
+      this.setState({
+        ideaList: []
+      })
+    } else {
+      return
     }
   }
 

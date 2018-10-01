@@ -38,7 +38,6 @@ class Header extends Component {
       let ideaObj = { title: title, body: body }
       this.props.storeIdeas(ideaObj)
       this.clearInputs()
-      this.props.sendStateToContainer()
     } else {
       return
     }
